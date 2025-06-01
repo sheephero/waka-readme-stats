@@ -1,13 +1,13 @@
-name: Waka Readme
+name: Waka Readme       # ← 이걸 제일 위에 두고 저장
 
 on:
   schedule:
     - cron: '0 0 * * *'
-  workflow_dispatch:  # added for manual run
+  workflow_dispatch:
 
 jobs:
   update-readme:
-    name: WakaTime Readme Stats
+    name: Update WakaTime stats
     runs-on: ubuntu-latest
     steps:
       - uses: anmol098/waka-readme-stats@master
