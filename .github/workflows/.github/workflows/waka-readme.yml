@@ -1,4 +1,4 @@
-name: Waka Readme       # ← 이걸 제일 위에 두고 저장
+name: Waka Readme   # ← 워크플로 이름 (좌측에 표시될 이름)
 
 on:
   schedule:
@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-readme:
-    name: Update WakaTime stats
+  waka-stats:                        # ← 여기 job id를 고유하게 바꿔줌
+    name: Update WakaTime Stats     # ← 표시될 job 이름
     runs-on: ubuntu-latest
     steps:
       - uses: anmol098/waka-readme-stats@master
