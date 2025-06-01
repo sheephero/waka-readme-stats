@@ -2,8 +2,8 @@ name: Waka Readme
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 매일 자정 UTC 기준 실행
-  workflow_dispatch:
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # added for manual run
 
 jobs:
   update-readme:
